@@ -45,7 +45,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background: url('./assets/bg.jpg') no-repeat center center;
+    background: url('../img/bg.jpg') no-repeat center center;
     background-size: cover;
     height: 500px;
     padding-top: 25px;

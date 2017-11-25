@@ -1,0 +1,17 @@
+version: '3'
+services:
+  adoptly-web:
+    image: trzl/bestbite-web
+    container_name: bestbite-web
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    environment:
+      VIRTUAL_HOST: bestbite.tbrownkcdev.com
+      LETSENCRYPT_HOST: bestbite.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy
