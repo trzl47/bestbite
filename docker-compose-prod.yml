@@ -1,7 +1,7 @@
 version: '3'
 services:
-  adoptly-web:
-    image: trzl/bestbite-web
+  web:
+    image: trzl/portfolio:bestbite-web_v0.0.1
     container_name: bestbite-web
     restart: unless-stopped
     expose:

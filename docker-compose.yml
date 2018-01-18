@@ -5,7 +5,7 @@ services:
     container_name: bestbite-web
     restart: unless-stopped
     ports:
-      - '3007:3006' # expose ports - HOST:CONTAINER
+      - '3000:3000' # expose ports - HOST:CONTAINER
     volumes:
       - ./services/web:/usr/src/app
       - /usr/src/app/node_modules
